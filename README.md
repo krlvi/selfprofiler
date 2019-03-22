@@ -9,7 +9,9 @@ Currently only OSX is supported via the Accessability APIs.
 ## Usage
 The terminal will require access to OSX Accessability, which is enabled via `System Preferences -> Security & Privacy -> Privacy -> Accessibility` where you can add the terminal emulator that you use.
 
-`./selfprofiler.sh > prof.json`
+```sh
+$ ./selfprofiler.sh > prof.json
+```
 
 In Google Chrome navigate to `about://tracing` and load `prof.json`
 
