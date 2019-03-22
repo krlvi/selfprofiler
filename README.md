@@ -13,7 +13,7 @@ The terminal will require access to OSX Accessability, which is enabled via `Sys
 $ ./selfprofiler.sh > prof.json
 ```
 
-In Google Chrome navigate to `about://tracing` and load `prof.json`
+In Google Chrome navigate to `about://tracing` and load `prof.json`.
 
 ## Example
 Here is an example [profiling output](./example/prof.json?raw=true) which when loaded in Google Chrome's Trace Event Profiling Tool looks as follows:
