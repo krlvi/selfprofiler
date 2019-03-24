@@ -15,6 +15,30 @@ $ ./selfprofiler.sh > prof.json
 
 In Google Chrome navigate to `about://tracing` and load `prof.json`.
 
+## Installation
+If you would like to install SelfProfiler globally so that you can run it in any directory, you can use `install.sh`.
+
+```sh
+$ ./install.sh
+```
+
+Please restart your terminal or source your environment file after installation is successful.
+
+Now you can run SelfProfiler in any directory.
+
+```sh
+$ selfprofiler > prof.json
+```
+
+Notes:
+- Please make sure `/usr/local/bin` is included in your environment path.
+
+- If you get `permission denied` error message while running `install.sh`, make sure it is executable. You can use the following command to make it executable. _(`sudo` might be required)_
+
+  ```sh
+  $ chmod +x ./install.sh
+  ```
+
 ## Example
 Here is an example [profiling output](./example/prof.json?raw=true) which when loaded in Google Chrome's Trace Event Profiling Tool looks as follows:
 
