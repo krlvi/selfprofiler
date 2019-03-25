@@ -15,6 +15,12 @@ $ ./selfprofiler.sh > prof.json
 
 In Google Chrome navigate to `about://tracing` and load `prof.json`.
 
+If you want to resume a started session you can use the `--resume` flag.
+
+```sh
+$ ./selfprofiler.sh --resume >> prof.json
+```
+
 ## Example
 Here is an example [profiling output](./example/prof.json?raw=true) which when loaded in Google Chrome's Trace Event Profiling Tool looks as follows:
 
