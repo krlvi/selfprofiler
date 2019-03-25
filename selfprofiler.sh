@@ -28,9 +28,9 @@ fi
 
 print_row() {
     app=$(echo $1 | awk -F', ' '{print $1}')
-    label=$(echo $1 | awk -F', ' '{print $2}')
+    label=$(echo $1 | awk -F', ' '{print $2}' | jq -aR)
     ph=$2
-    echo '{"name": "'$label'", "cat": "'$app'", "ph": "'$ph'", "pid": "HUMAN", "tid": "'$app'", "ts": '$timestamp'},'
+    echo '{"name": '$label', "cat": "'$app'", "ph": "'$ph'", "pid": "HUMAN", "tid": "'$app'", "ts": '$timestamp'},'
 }
 
 timestamp=0
