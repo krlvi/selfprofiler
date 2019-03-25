@@ -35,7 +35,9 @@ print_row() {
 
 timestamp=0
 fg=""
-echo '['
+if [[ "$1" != "--resume" ]]; then
+	echo '['
+fi
 while true; do
     new=$(get_foreground_osx)
     if [[ "$new" != "$fg" ]]; then
