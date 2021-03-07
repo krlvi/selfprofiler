@@ -13,6 +13,11 @@ get_foreground_osx() {
                   set windowTitle to value of attribute "AXTitle"
                 end tell
               end tell
+              if frontAppName is "Safari"
+                tell application "Safari"
+                  set windowTitle to URL of current tab of window 1
+                end tell
+              end if
           else
               set windowTitle to "N/A"
           end if
