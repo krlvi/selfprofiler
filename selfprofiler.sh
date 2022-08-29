@@ -50,5 +50,5 @@ while true; do
         fg=$new
     fi
     timestamp=$((timestamp + 1000000))
-    sleep 3
+    sleep 30
 done
