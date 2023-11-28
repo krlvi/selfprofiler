@@ -1,4 +1,5 @@
 # SelfProfiler
+ASDF one
 
 SelfProfiler is a script that samples the currently active window, streaming [Trace Event Format](https://docs.google.com/document/d/1CvAClvFfyA5R-PhYUmn5OOQtYMH4h6I0nSsKchNAySU/preview) events containing the frontmost application name and window title to standard out.
 
