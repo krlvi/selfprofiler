@@ -1,4 +1,4 @@
-[
+jlsdf[
 {"name": "1. osascript", "cat": "iTerm2", "ph": "B", "pid": "HUMAN", "tid": "iTerm2", "ts": 0},
 {"name": "1. osascript", "cat": "iTerm2", "ph": "E", "pid": "HUMAN", "tid": "iTerm2", "ts": 4000000},
 {"name": "Alacritty", "cat": "alacritty", "ph": "B", "pid": "HUMAN", "tid": "alacritty", "ts": 4000000},
